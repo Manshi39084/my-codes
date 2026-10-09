@@ -1,6 +1,5 @@
-// ===============================
+
 // MOBILE MENU
-// ===============================
 
 const menuBtn = document.getElementById("menuBtn");
 const navLinks = document.getElementById("navLinks");
@@ -38,9 +37,7 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 });
 
 
-// ===============================
 // TYPING ANIMATION
-// ===============================
 
 const typingText = document.getElementById("typing");
 
@@ -98,12 +95,10 @@ function typeEffect() {
     setTimeout(typeEffect, deleting ? 70 : 120);
 }
 
-typeEffect();
+typeEffect()
 
-
-// ===============================
 // CONTACT FORM
-// ===============================
+
 
 const contactForm = document.getElementById("contactForm");
 
@@ -123,9 +118,7 @@ contactForm.addEventListener("submit", function(event) {
 });
 
 
-// ===============================
-// SCROLL REVEAL
-// ===============================
+// SCROLL REVEAl
 
 const sections = document.querySelectorAll(".section");
 
