@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ToDo App</title>
+<style>
+body{font-family:Arial;background:#f4f4f4;display:flex;justify-content:center;padding:50px}
+.box{background:white;padding:20px;border-radius:10px;width:300px;box-shadow:0 0 10px #ccc}
+input{width:70%;padding:8px} button{padding:8px 12px}
+li{margin:5px 0;display:flex;justify-content:space-between}
+</style>
+</head>
+<body>
+<div class="box">
+<h3>My ToDo List</h3>
+<input id="task" placeholder="New task"><button onclick="add()">Add</button>
+<ul id="list"></ul>
+</div>
+<script>
+function add(){
+let t=document.getElementById('task').value;
+if(!t)return;
+let li=document.createElement('li');
+li.innerHTML=t+' <span onclick="this.parentElement.remove()" style="cursor:pointer;color:red">X</span>';
+document.getElementById('list').appendChild(li);
+document.getElementById('task').value='';
+}
+</script>
+</body>
+</html>
