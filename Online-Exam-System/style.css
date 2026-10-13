@@ -1,0 +1,30 @@
+<style>
+body{ background:pink;
+ color:white; 
+ font-family:Arial; 
+ display:flex; 
+ justify-content:center;
+ padding:20px;
+ }
+
+.container {
+ background:blueviolet; 
+ padding:20px;
+ border-radius:10px; 
+width:400px; 
+}
+
+.hidden { 
+display:none!important;
+}
+
+input {
+ margin:5px;
+ padding:8px;
+ width:90%; }
+button {
+ margin:5px;
+ padding:8px 15px;
+ cursor:pointer; 
+}
+</style>
